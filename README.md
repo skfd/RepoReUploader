@@ -1,5 +1,7 @@
 # RepoReUploader
 
+[![Build status](https://ci.appveyor.com/api/projects/status/m7dse08b5y76mhis)](https://ci.appveyor.com/project/skfd/reporeuploader)
+
 Downloades repo from Codeplex and brings it to blessed soil of Github.
 
 ## TODO
