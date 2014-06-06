@@ -68,15 +68,23 @@
   <ItemGroup>
     <Compile Include="CodeplexTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UploaderTests.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\RepoReUploader.Downloader\RepoReUploader.Downloader.csproj">
       <Project>{7a43f8c6-30af-4916-8fad-9e6e9656830c}</Project>
       <Name>RepoReUploader.Downloader</Name>
     </ProjectReference>
+    <ProjectReference Include="..\RepoReUploader.Uploader\RepoReUploader.Uploader.csproj">
+      <Project>{0941e634-0061-4a45-8f94-8d4fee0677fb}</Project>
+      <Name>RepoReUploader.Uploader</Name>
+    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{82A7F48D-3B50-4B1E-B82E-3ADA8210C358}" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

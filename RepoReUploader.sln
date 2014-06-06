@@ -1,11 +1,15 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2012
+# Visual Studio 2013
+VisualStudioVersion = 12.0.30110.0
+MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RepoReUploader", "RepoReUploader\RepoReUploader.csproj", "{61BD8402-5B86-4AA4-BCAA-89B1CA0CDB83}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RepoReUploader.Downloader", "RepoReUploader.Downloader\RepoReUploader.Downloader.csproj", "{7A43F8C6-30AF-4916-8FAD-9E6E9656830C}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RepoReUploader.Tests", "RepoReUploader.Tests\RepoReUploader.Tests.csproj", "{1ADD07EF-9B6D-4A3B-BCC6-10224A2D924A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RepoReUploader.Uploader", "RepoReUploader.Uploader\RepoReUploader.Uploader.csproj", "{0941E634-0061-4A45-8F94-8D4FEE0677FB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +43,12 @@ Global
 		{1ADD07EF-9B6D-4A3B-BCC6-10224A2D924A}.Release|Any CPU.Build.0 = Release|Any CPU
 		{1ADD07EF-9B6D-4A3B-BCC6-10224A2D924A}.Release|x86.ActiveCfg = Release|x86
 		{1ADD07EF-9B6D-4A3B-BCC6-10224A2D924A}.Release|x86.Build.0 = Release|x86
+		{0941E634-0061-4A45-8F94-8D4FEE0677FB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0941E634-0061-4A45-8F94-8D4FEE0677FB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0941E634-0061-4A45-8F94-8D4FEE0677FB}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{0941E634-0061-4A45-8F94-8D4FEE0677FB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0941E634-0061-4A45-8F94-8D4FEE0677FB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0941E634-0061-4A45-8F94-8D4FEE0677FB}.Release|x86.ActiveCfg = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
