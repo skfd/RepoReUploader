@@ -33,23 +33,34 @@ namespace RepoReUploader.Tests
         [Test]
         public void SvnCloned()
         {
-            var svc = new CodeplexService("SvnThief");
+            var svc = new CodeplexService();
 
-            svc.Clone("https://SvnThief.codeplex.com/");
+            svc.Clone("https://SvnThief.codeplex.com/", "SvnThief");
+        }
+
+        [Test]  
+        public void GitCloned()
+        {
+            var svc = new CodeplexService();
+
+            svc.Clone("https://gitThief.codeplex.com/", "gitThief");
         }
 
         [Test]
-        public void GitCloned()
+        public void FullTest()
         {
-            var svc = new CodeplexService("gitThief");
+            var rru = new ReUploader(
+                @"C:\reuploades\",
+                @"C:\reuploades\config.json");
 
-            svc.Clone("https://gitThief.codeplex.com/");
+            rru.ReUpload();
         }
+
 
         [TestFixtureTearDown]
         public void TearDown()
         {
-            Directory.Delete(".", recursive: true);
+            //Directory.Delete(".", recursive: true);
         }
     }
 }

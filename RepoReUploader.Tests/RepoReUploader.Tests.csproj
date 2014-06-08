@@ -79,6 +79,10 @@
       <Project>{0941e634-0061-4a45-8f94-8d4fee0677fb}</Project>
       <Name>RepoReUploader.Uploader</Name>
     </ProjectReference>
+    <ProjectReference Include="..\RepoReUploader\RepoReUploader.csproj">
+      <Project>{61bd8402-5b86-4aa4-bcaa-89b1ca0cdb83}</Project>
+      <Name>RepoReUploader</Name>
+    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

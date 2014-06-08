@@ -55,8 +55,9 @@
     <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Octokit">
-      <HintPath>..\packages\Octokit.0.3.4\lib\net45\Octokit.dll</HintPath>
+    <Reference Include="Newtonsoft.Json, Version=6.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Newtonsoft.Json.6.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -68,8 +69,19 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Class1.cs" />
+    <Compile Include="Config.cs" />
+    <Compile Include="ReUploader.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\RepoReUploader.Downloader\RepoReUploader.Downloader.csproj">
+      <Project>{7a43f8c6-30af-4916-8fad-9e6e9656830c}</Project>
+      <Name>RepoReUploader.Downloader</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\RepoReUploader.Uploader\RepoReUploader.Uploader.csproj">
+      <Project>{0941e634-0061-4a45-8f94-8d4fee0677fb}</Project>
+      <Name>RepoReUploader.Uploader</Name>
+    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

@@ -6,7 +6,10 @@ using System.Threading.Tasks;
 
 namespace RepoReUploader
 {
-    public class Class1
+    public class Config
     {
+        public List<string> Repos { get; set; }
+
+
     }
 }
